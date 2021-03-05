@@ -152,6 +152,7 @@ public final class VKPinCodeView: UIView {
         _code = ""
         _textField.text = nil
         _stack.arrangedSubviews.forEach({ ($0 as! VKLabel).text = nil })
+        onBecomeActive()
         isError = false
     }
     
